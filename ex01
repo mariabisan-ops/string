@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char s[50];
+
+    printf ("Nome: ");
+    fgets (s, sizeof(s), stdin );//ler string
+    s [strlen(s)-1] = '\0';
+    printf ("%s", s);
+
+}
